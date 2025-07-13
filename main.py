@@ -6,7 +6,8 @@ app = Flask("aether")
 users = [
     "john doe",
     "jane doe",
-    "mr. butt"
+    "mr. butt",
+    "mrs. butt"
 ]
 
 @app.route("/")
