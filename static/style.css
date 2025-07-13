@@ -1,0 +1,21 @@
+/* http://bettermotherfuckingwebsite.com/ */
+body {
+  margin: 40px auto;
+  max-width: 650px;
+  line-height: 1.6em;
+  font-size: 18px;
+  color: #444;
+  padding: 0 10px;
+}
+
+textarea {
+  resize: none;
+  font-family: sans-serif;
+  height: 1.5em;
+  min-height: 1.5em;
+  overflow-y: none;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+

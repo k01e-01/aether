@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>users</h1>
+
+<textarea
+  name="add_user"
+  hx-post="/users/add"
+  hx-target="#user-list"
+  hx-swap="innerHTML"
+  hx-trigger="keyup[key==='Enter']"
+  hx-on::after-request="this.value=''"
+  onkeydown="if(event.key==='Enter') {event.preventDefault();}"
+></textarea>
+
+<br>
+
+<button 
+  hx-get="/users/list" 
+  hx-target="#user-list" 
+  hx-swap="innerHTML"
+>
+  Refresh
+</button>
+
+<div id="user-list">
+  {% include "partials/user_list.html" %}
+</div>
+
+{% endblock %}
