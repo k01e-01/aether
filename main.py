@@ -14,6 +14,11 @@ users = [
 def index():
     return flask.render_template("index.html", users=users)
 
+@app.route("/lilguy")
+def lilguy():
+    return flask.render_template("lilguy.html")
+
+
 @app.route("/users/list")
 def partials_user_list():
     return flask.render_template("partials/user_list.html", users=users)
